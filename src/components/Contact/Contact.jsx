@@ -1,7 +1,7 @@
 import s from "./Contact.module.css"
 import { BsFillTelephoneFill as Phone } from "react-icons/bs";
 import { FaUser as User } from "react-icons/fa";
-const Contact = ({name, number}) => {
+const Contact = ({ name, number, id, onDelete }) => {
 return (
 <div className={s.wrapper}>
     <div className={s.outercontainer}>
@@ -14,7 +14,7 @@ return (
         <p className={s.innerText}>{number}</p>
     </div>
     </div>
-<button className={s.contantNBtn}>Delete</button>
+    <button onClick={()=> onDelete(id)} className={s.contantNBtn}>Delete</button>
     </div>)}
 
 export default Contact;

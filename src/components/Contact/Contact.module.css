@@ -1,14 +1,16 @@
 .contactsList{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 12px;
-    width: 320px;
+}
+
+.contactItem{
+flex-basis: calc((100% - 24px) / 3);
 }
 
 .wrapper{
     display: flex;
     justify-content: space-between;
-    /* width: 100%; */
     padding: 16px;
     border: 2px solid black;
     border-radius: 8px;
